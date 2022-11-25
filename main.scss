@@ -5,10 +5,27 @@ body {
 	padding: 0 1rem;
 }
 
+@media screen and (max-width: 767px) {
+	.books {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.books {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 1324px) {
+	.books {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
 .books {
 	display: grid;
-	grid-template-columns: repeat(6, 1fr);
-	grid-gap: 1rem;
+	grid-gap: 2rem;
 
 	.book {
 		display: flex;
@@ -16,6 +33,8 @@ body {
 
 		img {
 			width: 100px;
+			height: fit-content;
+			box-shadow: 1px 1px 10px #999;
 		}
 
 		.info {
