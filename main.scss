@@ -1,0 +1,33 @@
+body {
+	background-color: #333;
+	color: #ccc;
+	font-family: sans-serif;
+	padding: 0 1rem;
+}
+
+.books {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-gap: 1rem;
+
+	.book {
+		display: flex;
+		gap: 1rem;
+
+		img {
+			width: 100px;
+		}
+
+		.info {
+			.title {
+				color: rgb(207, 207, 125);
+				font-size: 1.2rem;
+			}
+
+			.description {
+				color: #999;
+				font-style: italic;
+			}
+		}
+	}
+}
